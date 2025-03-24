@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: black;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    margin: 0 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: gold;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+
+}
+
+main {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.reserveren {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reserveren h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.reserveren-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reserveren-form label {
+    font-weight: bold;
+    color: #555;
+}
+
+.reserveren-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.reserveren-form button {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reserveren-form button:hover {
+    background-color: gold;
+}
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid #555;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+footer .footer-content div {
+    margin: 10px;
+}
+
+footer .logo-and-address img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer .logo-and-address p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: gold;
+}
+
+footer .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-logo p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-logo address {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav ul.active {
+        display: flex;
+    }
+
+    .nav ul li {
+        margin: 15px 0;
+        text-align: center;
+
+    }
+
+    .menu-toggle {
+        display: block;
+
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-content div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer .social-links,
+    footer .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .social-links a,
+    footer .footer-links a {
+        margin: 5px 0;
+    }
+
+    .reserveren {
+        padding: 15px;
+    }
+
+    .reserveren-form input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .reserveren-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+}
